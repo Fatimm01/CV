@@ -1,0 +1,526 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Digital - Fatim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER PROFESIONAL -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo">
+        <div class="logo-icon">F</div>
+        <div class="logo-text">FATIM<span>.</span></div>
+      </div>
+      
+      <nav class="header-nav">
+        <a href="#" class="nav-link active" data-page="home">Home</a>
+        <a href="#" class="nav-link" data-page="about">About</a>
+        <a href="#" class="nav-link" data-page="experience">Experience</a>
+        <a href="#" class="nav-link" data-page="portfolio">Portfolio</a>
+        <a href="#" class="nav-link" data-page="contact">Contact</a>
+      </nav>
+      
+      <div class="header-right">
+        <div class="header-status">
+          <span class="status-dot"></span>
+          <span class="status-text">Available</span>
+        </div>
+        <div class="header-date" id="currentDate"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="main-container">
+    <!-- HOME PAGE -->
+    <div class="page-wrapper active" id="home-page">
+      <!-- TOP BAR -->
+      <div class="top-bar">
+        <span>📍 Domisili: Jakarta</span>
+        <span>✉️ Gmail: fatim@email.com</span>
+        <span>📞 No telfon: 08xxxxxxxxx</span>
+      </div>
+
+      <!-- HERO SECTION -->
+      <div class="hero-section">
+        <div class="hero-card">
+          <div class="hero-text">
+            <h2>HI THERE !</h2>
+            <h1><span>I'M</span> FATIM</h1>
+            <div class="badge-student">INFORMATION SYSTEMS STUDENT</div>
+            <div class="hero-desc">
+              Mahasiswa Sistem Informasi yang passionate dalam pengembangan web dan desain kreatif. 
+              Berpengalaman dalam berbagai organisasi dan kepanitiaan dengan fokus pada teknologi dan inovasi.
+            </div>
+            <a href="#" class="btn-more" data-page="about">MORE ABOUT ME</a>
+          </div>
+          <div class="hero-photo">
+            <div class="hero-photo-placeholder">[FOTO PROFIL]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div class="page-wrapper" id="about-page">
+      <div class="full-section">
+        <div class="page-layout">
+          <div class="sidebar">
+            <div class="sidebar-photo">
+              <div class="photo-placeholder">[FOTO]</div>
+            </div>
+            <nav class="sidebar-nav">
+              <div class="nav-item" onclick="navigateToPage('home')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">HOME</span>
+              </div>
+              <div class="nav-item active">
+                <div class="nav-dot active"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label active">ABOUT ME</span>
+              </div>
+              <div class="nav-item" onclick="navigateToPage('experience')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">EXPERIENCE</span>
+              </div>
+              <div class="nav-item" onclick="navigateToPage('portfolio')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">PORTOFOLIO</span>
+              </div>
+              <div class="nav-item" onclick="navigateToPage('contact')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">CONTACT</span>
+              </div>
+            </nav>
+          </div>
+
+          <div class="content-area">
+            <div class="section-title">A B O U T &nbsp; M E</div>
+            <div class="about-text">
+              <h3>Tentang Fatim</h3>
+              <p>Saya adalah mahasiswa Sistem Informasi semester 6 yang memiliki ketertarikan besar dalam dunia teknologi dan desain. Selama masa studi, saya aktif mengikuti berbagai organisasi dan kepanitiaan yang membantu mengembangkan soft skill dan hard skill saya.</p>
+              <p>Memiliki pengalaman dalam pengembangan web, desain UI/UX, dan manajemen proyek. Selalu bersemangat untuk belajar hal-hal baru dan menghadapi tantangan baru.</p>
+            </div>
+            <div class="about-media">
+              <div class="landscape-placeholder"></div>
+            </div>
+          </div>
+
+          <div class="scroll-track">
+            <div class="scroll-thumb"></div>
+          </div>
+          <div class="scroll-arrow" onclick="navigateToPage('experience')">&#8595;</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE PAGE -->
+    <div class="page-wrapper" id="experience-page">
+      <div class="full-section">
+        <div class="page-layout">
+          <div class="sidebar">
+            <div class="sidebar-photo">
+              <div class="photo-placeholder">[FOTO]</div>
+            </div>
+            <nav class="sidebar-nav">
+              <div class="nav-item" onclick="navigateToPage('home')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">HOME</span>
+              </div>
+              <div class="nav-item" onclick="navigateToPage('about')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">ABOUT ME</span>
+              </div>
+              <div class="nav-item active">
+                <div class="nav-dot active"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label active">EXPERIENCE</span>
+              </div>
+              <div class="nav-item" onclick="navigateToPage('portfolio')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">PORTOFOLIO</span>
+              </div>
+              <div class="nav-item" onclick="navigateToPage('contact')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">CONTACT</span>
+              </div>
+            </nav>
+          </div>
+
+          <div class="content-area">
+            <div class="section-title">E X P E R I E N C E</div>
+            <div class="exp-tabs">
+              <button class="exp-tab active" onclick="switchExpTab(this, 'org')">ORGANIZATION</button>
+              <button class="exp-tab" onclick="switchExpTab(this, 'committee')">COMMITTEE</button>
+              <button class="exp-tab" onclick="switchExpTab(this, 'other')">OTHER</button>
+            </div>
+
+            <div id="exp-org" class="exp-cards fade-in">
+              <div class="exp-card">
+                <div class="exp-card-img"><div class="landscape-placeholder"></div></div>
+                <div class="exp-card-desc">HIMASIFO<br>Staff Divisi Teknologi 2024</div>
+              </div>
+              <div class="exp-card">
+                <div class="exp-card-img"><div class="landscape-placeholder"></div></div>
+                <div class="exp-card-desc">UKM Programming<br>Anggota Aktif 2023-2024</div>
+              </div>
+              <div class="exp-card">
+                <div class="exp-card-img"><div class="landscape-placeholder"></div></div>
+                <div class="exp-card-desc">Developer Student Club<br>Core Team 2024</div>
+              </div>
+            </div>
+
+            <div id="exp-committee" class="exp-cards fade-in" style="display:none">
+              <div class="exp-card">
+                <div class="exp-card-img"><div class="landscape-placeholder"></div></div>
+                <div class="exp-card-desc">IT FEST 2024<br>Koordinator Acara</div>
+              </div>
+              <div class="exp-card">
+                <div class="exp-card-img"><div class="landscape-placeholder"></div></div>
+                <div class="exp-card-desc">Web Development Workshop<br>Ketua Pelaksana</div>
+              </div>
+            </div>
+
+            <div id="exp-other" class="exp-cards fade-in" style="display:none">
+              <div class="exp-card">
+                <div class="exp-card-img"><div class="landscape-placeholder"></div></div>
+                <div class="exp-card-desc">Freelance Web Developer<br>2024 - Sekarang</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-track">
+            <div class="scroll-thumb"></div>
+          </div>
+          <div class="scroll-arrow" onclick="navigateToPage('portfolio')">&#8595;</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO PAGE -->
+    <div class="page-wrapper" id="portfolio-page">
+      <div class="full-section">
+        <div class="page-layout">
+          <div class="sidebar">
+            <div class="sidebar-photo">
+              <div class="photo-placeholder">[FOTO]</div>
+            </div>
+            <nav class="sidebar-nav">
+              <div class="nav-item" onclick="navigateToPage('home')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">HOME</span>
+              </div>
+              <div class="nav-item" onclick="navigateToPage('about')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">ABOUT ME</span>
+              </div>
+              <div class="nav-item" onclick="navigateToPage('experience')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">EXPERIENCE</span>
+              </div>
+              <div class="nav-item active">
+                <div class="nav-dot active"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label active">PORTOFOLIO</span>
+              </div>
+              <div class="nav-item" onclick="navigateToPage('contact')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">CONTACT</span>
+              </div>
+            </nav>
+          </div>
+
+          <div class="content-area">
+            <div class="section-title">P O R T O F O L I O</div>
+            <div class="portfolio-layout">
+              <div class="portfolio-menu">
+                <div class="portfolio-menu-item active" onclick="switchPortTab(this, 'akademik')">AKADEMIK</div>
+                <div class="portfolio-menu-item" onclick="switchPortTab(this, 'profesional')">PROFESIONAL</div>
+                <div class="portfolio-menu-item" onclick="switchPortTab(this, 'digital')">DIGITAL</div>
+              </div>
+
+              <div class="portfolio-content">
+                <div id="port-akademik" class="fade-in">
+                  <div class="portfolio-cards">
+                    <div class="portfolio-card">
+                      <div class="portfolio-card-img"><div class="landscape-placeholder"></div></div>
+                      <div class="portfolio-card-info">
+                        <strong>Sistem Informasi Perpustakaan</strong>
+                        Pemrograman Web<br>2024<br>Aplikasi manajemen perpustakaan berbasis web<br>
+                        <small>github.com/fatim/library-system</small>
+                      </div>
+                    </div>
+                    <div class="portfolio-card">
+                      <div class="portfolio-card-img"><div class="landscape-placeholder"></div></div>
+                      <div class="portfolio-card-info">
+                        <strong>UI/UX Aplikasi Mobile</strong>
+                        Interaksi Manusia & Komputer<br>2024<br>Desain aplikasi pembelajaran online<br>
+                        <small>figma.com/@fatim</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="port-profesional" style="display:none" class="fade-in">
+                  <div class="portfolio-single">
+                    <div class="portfolio-single-img"><div class="landscape-placeholder"></div></div>
+                    <div class="portfolio-single-info">
+                      <div class="ps-title">Web Developer - PT Digital Kreatif</div>
+                      <div class="ps-year">2024</div>
+                      <div class="ps-desc">Mengembangkan website company profile dan sistem manajemen konten menggunakan React.js dan Laravel.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="port-digital" style="display:none" class="fade-in">
+                  <div class="digital-links">
+                    <div class="digital-link-box">🔗 GitHub: github.com/fatim</div>
+                    <div class="digital-link-box">🔗 LinkedIn: linkedin.com/in/fatim</div>
+                    <div class="digital-link-box">🔗 Portfolio: fatim-portfolio.netlify.app</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-track">
+            <div class="scroll-thumb"></div>
+          </div>
+          <div class="scroll-arrow" onclick="navigateToPage('contact')">&#8595;</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div class="page-wrapper" id="contact-page">
+      <div class="full-section">
+        <div class="page-layout">
+          <div class="sidebar">
+            <div class="sidebar-photo">
+              <div class="photo-placeholder">[FOTO]</div>
+            </div>
+            <nav class="sidebar-nav">
+              <div class="nav-item" onclick="navigateToPage('home')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">HOME</span>
+              </div>
+              <div class="nav-item" onclick="navigateToPage('about')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">ABOUT ME</span>
+              </div>
+              <div class="nav-item" onclick="navigateToPage('experience')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">EXPERIENCE</span>
+              </div>
+              <div class="nav-item" onclick="navigateToPage('portfolio')">
+                <div class="nav-dot"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label">PORTOFOLIO</span>
+              </div>
+              <div class="nav-item active">
+                <div class="nav-dot active"></div>
+                <div class="nav-line"></div>
+                <span class="nav-label active">CONTACT</span>
+              </div>
+            </nav>
+          </div>
+
+          <div class="content-area">
+            <div class="section-title">C O N T A C T</div>
+            <div class="contact-subtitle">FEEL <span>FREE</span> TO CONTACT ME!</div>
+            <div class="contact-box">
+              <p>📬 OPEN FOR COLLABORATION & OPPORTUNITIES</p>
+            </div>
+            <div class="contact-icons">
+              <div class="contact-icon-item">
+                <div class="contact-icon-circle icon-wa">📱</div>
+                <div class="contact-icon-text">
+                  <strong>WhatsApp</strong>
+                  <span>+62 812-3456-7890</span>
+                </div>
+              </div>
+              <div class="contact-icon-item">
+                <div class="contact-icon-circle icon-ig">📷</div>
+                <div class="contact-icon-text">
+                  <strong>Instagram</strong>
+                  <span>@fatim.design</span>
+                </div>
+              </div>
+              <div class="contact-icon-item">
+                <div class="contact-icon-circle icon-email">✉️</div>
+                <div class="contact-icon-text">
+                  <strong>Email</strong>
+                  <span>fatim@student.email.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-track">
+            <div class="scroll-thumb"></div>
+          </div>
+          <div class="scroll-arrow scroll-arrow-up" onclick="navigateToPage('home')">&#8593;</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER PROFESIONAL -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>FATIM</h3>
+          <p>Menciptakan solusi digital yang inovatif dan bermakna melalui desain dan pengembangan yang berkualitas.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon">📱</a>
+            <a href="#" class="social-icon">📧</a>
+            <a href="#" class="social-icon">💼</a>
+            <a href="#" class="social-icon">📷</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#" onclick="navigateToPage('home')">Home</a></li>
+            <li><a href="#" onclick="navigateToPage('about')">About</a></li>
+            <li><a href="#" onclick="navigateToPage('experience')">Experience</a></li>
+            <li><a href="#" onclick="navigateToPage('portfolio')">Portfolio</a></li>
+            <li><a href="#" onclick="navigateToPage('contact')">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Layanan</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Frontend Dev</a></li>
+            <li><a href="#">Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Dapatkan update terbaru dari saya</p>
+          <form class="newsletter-form" onsubmit="return false;">
+            <input type="email" class="newsletter-input" placeholder="Email Anda">
+            <button type="submit" class="newsletter-btn">→</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          © 2026 Fatim. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PAGE INDICATOR -->
+  <div class="page-indicator">
+    <span class="page-indicator-dot"></span>
+    <span id="pageIndicator">Home Page</span>
+  </div>
+
+  <script>
+    // Update date in header
+    const date = new Date();
+    const options = { day: 'numeric', month: 'long', year: 'numeric' };
+    document.getElementById('currentDate').textContent = date.toLocaleDateString('id-ID', options);
+
+    // Navigation function
+    function navigateToPage(pageName) {
+      // Update header navigation
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.dataset.page === pageName) {
+          link.classList.add('active');
+        }
+      });
+
+      // Hide all pages
+      document.querySelectorAll('.page-wrapper').forEach(page => {
+        page.classList.remove('active');
+      });
+
+      // Show selected page
+      document.getElementById(`${pageName}-page`).classList.add('active');
+
+      // Update page indicator
+      const pageIndicator = document.getElementById('pageIndicator');
+      pageIndicator.textContent = pageName.charAt(0).toUpperCase() + pageName.slice(1) + ' Page';
+    }
+
+    // Experience tabs
+    function switchExpTab(btn, tabId) {
+      // Update tab buttons
+      document.querySelectorAll('.exp-tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      btn.classList.add('active');
+
+      // Hide all experience content
+      document.querySelectorAll('[id^="exp-"]').forEach(content => {
+        content.style.display = 'none';
+      });
+
+      // Show selected content
+      document.getElementById(`exp-${tabId}`).style.display = 'flex';
+    }
+
+    // Portfolio tabs
+    function switchPortTab(btn, tabId) {
+      // Update menu items
+      document.querySelectorAll('.portfolio-menu-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      btn.classList.add('active');
+
+      // Hide all portfolio content
+      document.querySelectorAll('[id^="port-"]').forEach(content => {
+        content.style.display = 'none';
+      });
+
+      // Show selected content
+      document.getElementById(`port-${tabId}`).style.display = 'block';
+    }
+
+    // Add click event listeners to header navigation
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        navigateToPage(link.dataset.page);
+      });
+    });
+
+    // Add click event listeners to "MORE ABOUT ME" button
+    document.querySelector('.btn-more')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      navigateToPage('about');
+    });
+  </script>
+</body>
+</html>
